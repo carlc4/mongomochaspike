@@ -6,9 +6,7 @@ const mongoose = require("mongoose");
 // Connect to the DB before the tests run
 before(function (done) {
   // the before function establishes the connection before the tests run
-  mongoose.connect(
-    "mongodb+srv://carl:Password123@cluster0.tmfnh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-  );
+  mongoose.connect("ADD MONGO URI HERE");
 
   mongoose.connection
     .once("open", function () {
